@@ -1861,7 +1861,9 @@ local function unpackt(array : table)
 end
 
 -- Interface Management
--- local LunaUI = isStudio and script.Parent:WaitForChild("Luna UI") or game:GetObjects("rbxassetid://86467455075715")[1]
+print("Running line 1864")
+local LunaUI = isStudio and script.Parent:WaitForChild("Luna UI") or game:GetObjects("rbxassetid://86467455075715")[1]
+print("Success")
 
 local SizeBleh = nil
 
