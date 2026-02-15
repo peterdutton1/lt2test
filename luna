@@ -5841,8 +5841,8 @@ function Luna:CreateWindow(WindowSettings)
 					end
 					PlayerTableRefresh()
 					DropdownSettings.CurrentOption = DropdownSettings.Options[1]                    
-					Players.PlayerAdded:Connect(function() PlayerTableRefresh() end)
-					Players.PlayerRemoving:Connect(function() PlayerTableRefresh() end)
+					Players.PlayerAdded:Connect(function() PlayerTableRefresh() print("PlayerAdded") end)
+					Players.PlayerRemoving:Connect(function() PlayerTableRefresh() print("PlayerRemoving") end)
 
 				end
 
