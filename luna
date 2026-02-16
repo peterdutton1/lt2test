@@ -4067,8 +4067,6 @@ function Luna:CreateWindow(WindowSettings)
 
 					end
 
-					Refresh()
-
 					if DropdownSettings.CurrentOption then
 						if type(DropdownSettings.CurrentOption) == "string" then
 							DropdownSettings.CurrentOption = {DropdownSettings.CurrentOption}
