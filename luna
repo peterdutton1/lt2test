@@ -4067,6 +4067,8 @@ function Luna:CreateWindow(WindowSettings)
 
 					end
 
+					Refresh()
+
 					if DropdownSettings.CurrentOption then
 						if type(DropdownSettings.CurrentOption) == "string" then
 							DropdownSettings.CurrentOption = {DropdownSettings.CurrentOption}
@@ -4083,7 +4085,6 @@ function Luna:CreateWindow(WindowSettings)
 						ind = ind + 1
 					end
 					if ind == 1 then bleh = DropdownSettings.CurrentOption[1] else bleh = DropdownSettings.CurrentOption end
-					SafeCallback(bleh)
 					for _, Option in pairs(Dropdown.List:GetChildren()) do
 						if Option.ClassName == "TextLabel" then
 							tween(Option, {TextColor3 = Color3.fromRGB(200,200,200), BackgroundTransparency = 0.98})
