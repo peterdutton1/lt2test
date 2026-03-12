@@ -134,6 +134,7 @@ autobuild.BorderColor3 = Color3.fromRGB(0, 0, 0)
 autobuild.BorderSizePixel = 0
 autobuild.Position = UDim2.new(0.622664988, 0, 0.15254125, 0)
 autobuild.Size = UDim2.new(0.314445823, 0, 0.694131434, 0)
+autobuild.Visible = false
 
 UICorner.CornerRadius = UDim.new(0.0299999993, 0)
 UICorner.Parent = autobuild
@@ -151,10 +152,12 @@ ScrollingFrame.Size = UDim2.new(0.949999988, 0, 0.949999988, 0)
 ScrollingFrame.CanvasPosition = Vector2.new(0, 446.385529)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 ScrollingFrame.ScrollBarThickness = 5
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Wraps = true
 
 Birch.Name = "Birch"
 Birch.Parent = ScrollingFrame
