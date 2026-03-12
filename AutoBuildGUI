@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local AutoBuildGUI = Instance.new("ScreenGui")
 local autobuild = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -121,8 +116,6 @@ local Have_19 = Instance.new("TextLabel")
 local Need_19 = Instance.new("TextLabel")
 local Missing_19 = Instance.new("TextLabel")
 
---Properties:
-
 AutoBuildGUI.Name = "AutoBuildGUI"
 AutoBuildGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 AutoBuildGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -153,6 +146,7 @@ ScrollingFrame.CanvasPosition = Vector2.new(0, 446.385529)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 ScrollingFrame.ScrollBarThickness = 5
 ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame.CanvasPosition = Vector2.new(0,0)
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
